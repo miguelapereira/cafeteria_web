@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cafeteria Grão Dourado — café especial, calma e bons momentos.">
+    <title>Cafeteria Grão Dourado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/static/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+            <div class="container">
+                <a class="navbar-brand" href="#home" aria-label="Cafeteria Grão Dourado - início">
+                    <span class="brand-mark">☕</span>
+                    <span>Grão <em>Dourado</em></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link nav-order" href="#pedidos">Pedidos <span aria-hidden="true">↗</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero-section" aria-label="Destaques da cafeteria">
+            <div id="carouselCafe" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCafe" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCafe" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCafe" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85" class="d-block w-100" alt="Xícara de café sobre uma mesa de madeira" loading="eager">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=85" class="d-block w-100" alt="Interior acolhedor de uma cafeteria tranquila" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1800&q=85" class="d-block w-100" alt="Café coado sendo preparado com calma" loading="lazy">
+                    </div>
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="container hero-content">
+                    <p class="eyebrow">um intervalo para você</p>
+                    <h1>Onde cada gole<br><span>acalma o dia.</span></h1>
+                    <p class="hero-text">Cafés especiais, sabores artesanais e um espaço feito para desacelerar.</p>
+                    <a href="#produtos" class="btn btn-coffee">Conheça nosso menu <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="coffee-section section-space">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <p class="eyebrow">feito com presença</p>
+                    <h2>Pequenos rituais,<br><em>grandes sabores.</em></h2>
+                    <p>Escolhemos cada grão e ingrediente para transformar sua pausa em uma experiência especial.</p>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <article class="coffee-card">
+                            <div class="card-image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85" alt="Café espresso servido em xícara pequena" loading="lazy"><span class="card-number">01</span></div>
+                            <div class="card-body"><h3>Espresso da casa</h3><p>Intenso, aromático e com notas de chocolate.</p><strong>R$ 7,90</strong></div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="coffee-card">
+                            <div class="card-image"><img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=900&q=85" alt="Café latte com espuma cremosa" loading="lazy"><span class="card-number">02</span></div>
+                            <div class="card-body"><h3>Latte sereno</h3><p>Leite vaporizado e espresso em perfeita harmonia.</p><strong>R$ 12,90</strong></div>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="coffee-card">
+                            <div class="card-image"><img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=900&q=85" alt="Grãos de café torrados e uma xícara" loading="lazy"><span class="card-number">03</span></div>
+                            <div class="card-body"><h3>Coado dourado</h3><p>Leve e delicado, para apreciar sem pressa.</p><strong>R$ 9,90</strong></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedidos" class="order-section">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-4">
+                <div><p class="eyebrow">seu momento começa aqui</p><h2>Peça seu café<br><em>do seu jeito.</em></h2></div>
+                <a href="mailto:pedidos@graodourado.com" class="btn btn-light-coffee">Fazer um pedido <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer"><div class="container d-flex flex-column flex-md-row justify-content-between gap-2"><span>© 2024 Grão Dourado</span><span>Um café para desacelerar.</span></div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
